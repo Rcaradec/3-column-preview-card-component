@@ -1,0 +1,47 @@
+:root {
+  /* Neutral colors */
+  --transparent_white: hsla(0, 0%, 100%, 0.75);
+  --very_light_gray: hsl(0, 0%, 95%);
+
+  /* Primary colors*/
+  --bright_orange: hsl(31, 77%, 52%);
+  --dark_cyan: hsl(184, 100%, 22%);
+  --very_dark_cyan: hsl(179, 100%, 13%);
+}
+
+html {
+  font-size: 15px;
+}
+
+/* Mobile version */
+@media screen and (max-width: 375px) {
+  body {
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: var(transparent_white);
+  }
+
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+  }
+
+  .article__title {
+    font-family: "Big Shoulders Display", cursive;
+  }
+
+  .article__desc {
+    font-family: "Lexend Deca", sans-serif;
+  }
+
+  .article_sedans {
+    background-color: var(bright_orange);
+  }
+
+  .button {
+    border-radius: 30px;
+  }
+}
