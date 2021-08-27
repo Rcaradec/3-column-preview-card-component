@@ -14,7 +14,7 @@ html {
 }
 
 /* Mobile version */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 667px) {
   body {
     font-family: sans-serif;
     font-weight: bold;
@@ -30,12 +30,12 @@ html {
   }
 
   .article {
-    flex: 1;
     padding: 30px;
   }
 
   .article__image {
     padding-bottom: 20px;
+    width: 30%;
   }
 
   .article__title {
@@ -63,8 +63,11 @@ html {
     margin-bottom: 10px;
   }
 
-  span {
-    padding-bottom: -50px;
+  .article__button:hover {
+    background: transparent;
+    border: white;
+    color: white;
+    cursor: pointer;
   }
 
   .article__sedans button {
