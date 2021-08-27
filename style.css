@@ -21,41 +21,74 @@ html {
     background-color: var(--transparent_white);
   }
 
-  .main {
-  }
-
   .main__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
     padding: 40px;
+  }
+
+  .article {
+    flex: 1;
+    padding: 30px;
+  }
+
+  .article__image {
+    padding-bottom: 20px;
   }
 
   .article__title {
     font-family: "Big Shoulders Display", cursive;
+    color: white;
+    font-size: 1.1em;
+    padding-bottom: 20px;
   }
 
   .article__desc {
     font-family: "Lexend Deca", sans-serif;
+    color: var(--transparent_white);
+    font-size: 0.3em;
+    font-weight: 300;
+    padding-bottom: 20px;
+    line-height: 1.5;
   }
 
-  .article {
-    border: 1px solid black;
-    flex: 1;
-    height: 400px;
-    text-align: center;
+  .article__button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  span {
+    padding-bottom: -50px;
+  }
+
+  .article__sedans button {
+    color: var(--bright_orange);
+  }
+  .article__suvs button {
+    color: var(--dark_cyan);
+  }
+  .article__luxury button {
+    color: var(--very_dark_cyan);
   }
 
   .article__sedans {
     background-color: var(--bright_orange);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
   }
   .article__suvs {
     background-color: var(--dark_cyan);
   }
   .article__luxury {
     background-color: var(--very_dark_cyan);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
   }
 
   .button {
