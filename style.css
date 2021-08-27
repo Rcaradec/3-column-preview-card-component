@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 45px;
 }
 
 /* Mobile version */
@@ -18,15 +18,19 @@ html {
   body {
     font-family: sans-serif;
     font-weight: bold;
-    background-color: var(transparent_white);
+    background-color: var(--transparent_white);
   }
 
-  .main_container {
+  .main {
+  }
+
+  .main__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid red;
+    padding: 40px;
   }
 
   .article__title {
@@ -37,8 +41,21 @@ html {
     font-family: "Lexend Deca", sans-serif;
   }
 
-  .article_sedans {
-    background-color: var(bright_orange);
+  .article {
+    border: 1px solid black;
+    flex: 1;
+    height: 400px;
+    text-align: center;
+  }
+
+  .article__sedans {
+    background-color: var(--bright_orange);
+  }
+  .article__suvs {
+    background-color: var(--dark_cyan);
+  }
+  .article__luxury {
+    background-color: var(--very_dark_cyan);
   }
 
   .button {
