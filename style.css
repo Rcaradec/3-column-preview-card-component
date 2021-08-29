@@ -9,92 +9,61 @@
   --very_dark_cyan: hsl(179, 100%, 13%);
 }
 
-html {
-  font-size: 45px;
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: rgb(169, 175, 177);
 }
 
-/* Mobile version */
-@media screen and (max-width: 667px) {
-  body {
-    font-family: sans-serif;
-    font-weight: bold;
-    background-color: var(--transparent_white);
-  }
+.card-container {
+  width: 70%;
+  display: flex;
+  background-color: rgb(192, 192, 192);
+  margin: 20% auto;
+}
 
-  .main__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-  }
+.card {
+  color: var(--transparent_white);
+  padding: 50px;
+  display: flex;
+  border: 2 px solidrgb(187, 37, 192);
+  flex-direction: row;
+}
 
-  .article {
-    padding: 30px;
-  }
+h2 {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
 
-  .article__image {
-    padding-bottom: 20px;
-    width: 30%;
-  }
+.card img {
+  padding-bottom: 40px;
+  width: 30%;
+}
 
-  .article__title {
-    font-family: "Big Shoulders Display", cursive;
-    color: white;
-    font-size: 1.1em;
-    padding-bottom: 20px;
-  }
+p {
+  padding-bottom: 90px;
+  line-height: 2;
+}
 
-  .article__desc {
-    font-family: "Lexend Deca", sans-serif;
-    color: var(--transparent_white);
-    font-size: 0.3em;
-    font-weight: 300;
-    padding-bottom: 20px;
-    line-height: 1.5;
-  }
+button {
+  padding: 15px 45px;
+  border-radius: 30px;
+}
 
-  .article__button {
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    background-color: white;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+.sedans {
+  background-color: var(--bright_orange);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 
-  .article__button:hover {
-    background: transparent;
-    border: white;
-    color: white;
-    cursor: pointer;
-  }
+.suvs {
+  background-color: var(--dark_cyan);
+}
 
-  .article__sedans button {
-    color: var(--bright_orange);
-  }
-  .article__suvs button {
-    color: var(--dark_cyan);
-  }
-  .article__luxury button {
-    color: var(--very_dark_cyan);
-  }
-
-  .article__sedans {
-    background-color: var(--bright_orange);
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-  }
-  .article__suvs {
-    background-color: var(--dark_cyan);
-  }
-  .article__luxury {
-    background-color: var(--very_dark_cyan);
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-  }
-
-  .button {
-    border-radius: 30px;
-  }
+.luxury {
+  background-color: var(--very_dark_cyan);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
